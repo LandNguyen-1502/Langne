@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #e3c5d4, #eb81b6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Comic Sans MS", cursive;
+  overflow: hidden;
+}
+
+#cat {
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: relative;
+  z-index: 1;
+}
+
+#cat:hover {
+  transform: scale(1.2);
+}
+
+.message {
+  position: absolute;
+  font-size: 24px;
+  color: #ff1493;
+  animation: flyUp 1.5s forwards;
+  white-space: nowrap;
+}
+
+@keyframes flyUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
+.click button {
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #868db0;
+  background-color: pink;
+  font-size: 30px;
+  border-color: #4fb4db;
+}
